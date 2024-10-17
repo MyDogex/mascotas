@@ -1,0 +1,52 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <!-- Imagen de la mascota -->
+    <ImageView
+        android:id="@+id/imgMascota"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_launcher_foreground" />
+    <TextView
+        android:id="@+id/tvNombreMascota"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre Mascota"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgMascota"
+        app:layout_constraintEnd_toStartOf="@id/imgBone"
+        app:layout_constraintBottom_toTopOf="@id/tvHuesosMascota"/>
+
+    <!-- Cantidad de huesos de la mascota -->
+    <TextView
+        android:id="@+id/tvHuesosMascota"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0 huesos"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintStart_toEndOf="@id/imgMascota"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreMascota"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgBone"/>
+
+    <ImageView
+        android:id="@+id/imgBone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_hueso_blanco"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
