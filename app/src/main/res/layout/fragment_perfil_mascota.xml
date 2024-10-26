@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Imagen de perfil de la mascota -->
+    <ImageView
+        android:id="@+id/imgPerfilMascota"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img_ronny" />
+
+    <!-- Nombre de la mascota -->
+    <TextView
+        android:id="@+id/txtNombreMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ronny"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <!-- Grid de fotos de huesos -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:padding="8dp">
+
+        <!-- Aquí añadimos 9 ImageView para las fotos de huesos -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_hueso_blanco" />
+
+        <!-- Copia el ImageView anterior 8 veces más para completar los 9 -->
+        <!-- Asegúrate de cambiar el ID solo si quieres identificarlos individualmente -->
+    </GridLayout>
+</LinearLayout>

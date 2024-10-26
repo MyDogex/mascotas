@@ -5,4 +5,14 @@
             android:icon="@drawable/ic_star"
             android:title="Filtrar favoritos"
             app:showAsAction="always" />
+
+        <item
+            android:id="@+id/action_contacto"
+            android:title="Contacto"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/action_acerca_de"
+            android:title="Acerca De"
+            app:showAsAction="never" />
 </menu>
