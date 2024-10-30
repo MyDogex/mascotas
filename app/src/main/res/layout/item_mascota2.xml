@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center">
+
+    <!-- Imagen de la mascota -->
+    <ImageView
+        android:id="@+id/imgMascota"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/img_ronny"
+        android:contentDescription="Foto de mascota" />
+
+    <!-- Contenedor para el número de huesos y el icono de hueso -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Número de huesos -->
+        <TextView
+            android:id="@+id/txtNumeroHuesos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="16sp"
+            android:paddingEnd="4dp" />
+
+        <!-- Icono de hueso -->
+        <ImageView
+            android:id="@+id/imgHueso"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_hueso_blanco"
+            android:contentDescription="Icono de hueso" />
+    </LinearLayout>
+</LinearLayout>
