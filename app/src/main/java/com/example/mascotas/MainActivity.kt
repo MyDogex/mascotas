@@ -87,6 +87,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 true
             }
+            R.id.action_configurar_cuenta -> {
+                startActivity(Intent(this, ConfigurarCuentaActivity::class.java))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

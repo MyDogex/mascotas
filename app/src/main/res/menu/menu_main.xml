@@ -15,4 +15,8 @@
             android:id="@+id/action_acerca_de"
             android:title="Acerca De"
             app:showAsAction="never" />
+        <item
+            android:id="@+id/action_configurar_cuenta"
+            android:title="Configurar Cuenta"
+            app:showAsAction="never" />
 </menu>

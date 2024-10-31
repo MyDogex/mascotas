@@ -55,6 +55,9 @@ dependencies {
 
     implementation(libs.androidx.core.ktx)
     implementation (libs.androidx.viewpager2)
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.picasso)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
